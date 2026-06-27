@@ -19,7 +19,7 @@ function Sidebar() {
         try {
             const token = localStorage.getItem("token");
 
-            const response = await fetch("http://localhost:8080/api/thread", {
+            const response = await fetch("https://sigmagpt-1-pb0i.onrender.com/api/thread", {
                 headers: {
                     Authorization: `Bearer ${token}`,
                 },
