@@ -12,7 +12,7 @@ function Login({ setShowRegister }) {
 
         try {
             const res = await axios.post(
-                "http://localhost:8080/api/auth/login",
+                "https://sigmagpt-1-pb0i.onrender.com/api/auth/login",
                 {
                     email,
                     password,
