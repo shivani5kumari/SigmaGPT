@@ -62,7 +62,7 @@ function Sidebar() {
             const token = localStorage.getItem("token");
 
             const response = await fetch(
-                `https://sigmagpt-1-pb0i.onrender.com/api/thread/${newThreadId}`
+                `https://sigmagpt-1-pb0i.onrender.com/api/thread/${newThreadId}`,
                 {
                     headers: {
                         Authorization: `Bearer ${token}`,
@@ -90,7 +90,7 @@ function Sidebar() {
             const token = localStorage.getItem("token");
 
             const response = await fetch(
-                `https://sigmagpt-1-pb0i.onrender.com/api/thread/${threadId}`
+                `https://sigmagpt-1-pb0i.onrender.com/api/thread/${threadId}`,
                 {
                     method: "DELETE",
                     headers: {
