@@ -30,8 +30,11 @@ router.post("/register", async (req, res) => {
       message: "Registration Successful",
     });
   } catch (error) {
+    console.error("REGISTER ERROR:", error);
+
     res.status(500).json({
       message: error.message,
+      stack: error.stack,
     });
   }
 });
@@ -76,8 +79,11 @@ router.post("/login", async (req, res) => {
       },
     });
   } catch (error) {
+    console.error("LOGIN ERROR:", error);
+
     res.status(500).json({
       message: error.message,
+      stack: error.stack,
     });
   }
 });
